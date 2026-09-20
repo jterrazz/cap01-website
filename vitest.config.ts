@@ -1,3 +1,3 @@
-import { defineSpecConfig } from '@jterrazz/test/vitest';
+import { defineSpecConfig, unit } from '@jterrazz/test/vitest';
 
-export default defineSpecConfig({ test: { include: ['src/**/*.test.ts'] } });
+export default defineSpecConfig({ test: { projects: [unit()] } });
