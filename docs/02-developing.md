@@ -9,11 +9,12 @@ Use npm with Node 24 and the committed lockfile.
 | `make fix`    | Repair what a fixer may, across the whole tree |
 | `make check`  | Run quality checks, tests and static build     |
 
-`@jterrazz/typescript` is the one toolchain dependency, and `typescript check`
-and `typescript fix` are the only two commands that reach it. The site names the
-`astro` profile: `oxlint.config.ts` composes that profile with the testing
-fragment, and `tsconfig.json` extends the profile's preset for the strict flags
-and Astro's own for the file set it owns.
+Two toolchain packages carry the conventions. `@jterrazz/typescript` is reached
+by `typescript check` and `typescript fix` alone; `@jterrazz/test` supplies the
+vitest preset `vitest.config.ts` names, the testing fragment `oxlint.config.ts`
+composes, and the conventions checker that runs as one pass of `typescript
+check`. The site names the `astro` profile, and `tsconfig.json` extends the
+profile's preset for the strict flags and Astro's own for the file set it owns.
 
 `astro check` and the `.astro` formatter run inside the same command — prettier
 and its Astro plugin are the toolchain's dependencies, so this repository
