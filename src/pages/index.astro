@@ -2,33 +2,30 @@
 import { appLink } from '../domain/app-link';
 import Site from '../layouts/site.astro';
 
-const destination = appLink(
-        import.meta.env.DEV,
-        import.meta.env.PUBLIC_APP_URL,
-    ),
-    principles = [
-        {
-            number: '01',
-            title: 'Make room for the small things.',
-            description:
-                'A habit does not need to change everything. Start with something small enough to return to, even on an ordinary day.',
-            detail: 'Habits, at your pace',
-        },
-        {
-            number: '02',
-            title: 'Notice what moves you.',
-            description:
-                'Leave a few words about your day. Make space for the patterns, questions and moments you might otherwise pass by.',
-            detail: 'A place to reflect',
-        },
-        {
-            number: '03',
-            title: 'Keep your own direction.',
-            description:
-                'Bring your attention back to what matters to you. Growth can be thoughtful, personal and a little less hurried.',
-            detail: 'Room to find your way',
-        },
-    ];
+const destination = appLink(import.meta.env.DEV, import.meta.env.PUBLIC_APP_URL);
+const principles = [
+    {
+        number: '01',
+        title: 'Make room for the small things.',
+        description:
+            'A habit does not need to change everything. Start with something small enough to return to, even on an ordinary day.',
+        detail: 'Habits, at your pace',
+    },
+    {
+        number: '02',
+        title: 'Notice what moves you.',
+        description:
+            'Leave a few words about your day. Make space for the patterns, questions and moments you might otherwise pass by.',
+        detail: 'A place to reflect',
+    },
+    {
+        number: '03',
+        title: 'Keep your own direction.',
+        description:
+            'Bring your attention back to what matters to you. Growth can be thoughtful, personal and a little less hurried.',
+        detail: 'Room to find your way',
+    },
+];
 ---
 
 <Site>
@@ -49,8 +46,7 @@ const destination = appLink(
     <main id="main">
         <section class="hero" aria-labelledby="hero-title">
             <p class="eyebrow">
-                <span class="status-dot" aria-hidden="true"></span>A companion,
-                in the making
+                <span class="status-dot" aria-hidden="true"></span>A companion, in the making
             </p>
             <h1 id="hero-title">A little more intentional.</h1>
             <p class="hero-description">
@@ -58,9 +54,8 @@ const destination = appLink(
                 <br />A little room for yourself.
             </p>
             <p class="hero-context">
-                cap01 is an AI habit and growth coach we're building for the
-                everyday. Small steps, thoughtful reflection, and a direction of
-                your own.
+                cap01 is an AI habit and growth coach we're building for the everyday. Small steps,
+                thoughtful reflection, and a direction of your own.
             </p>
             <a class="button" href="#approach">
                 Meet cap01 <span aria-hidden="true">↓</span>
@@ -70,11 +65,7 @@ const destination = appLink(
                 <span></span>
             </div>
         </section>
-        <section
-            class="approach"
-            id="approach"
-            aria-labelledby="approach-title"
-        >
+        <section class="approach" id="approach" aria-labelledby="approach-title">
             <div class="section-heading">
                 <p class="eyebrow">A quieter kind of progress</p>
                 <h2 id="approach-title">Your life. Your pace.</h2>
@@ -97,17 +88,14 @@ const destination = appLink(
                 <p class="eyebrow">One small beginning</p>
                 <h2 id="preview-title">Still taking shape.</h2>
                 <p>
-                    The first web preview makes space for habits and a journal,
-                    saved in your browser. AI coaching and the mobile companion
-                    are still ahead.
+                    The first web preview makes space for habits and a journal, saved in your
+                    browser. AI coaching and the mobile companion are still ahead.
                 </p>
             </div>
             <div class="preview-action">
                 {destination ? (
                     <a class="button" href={destination}>
-                        {import.meta.env.DEV
-                            ? 'Explore the local preview'
-                            : 'Explore the web app'}
+                        {import.meta.env.DEV ? 'Explore the local preview' : 'Explore the web app'}
                         <span aria-hidden="true">↗</span>
                     </a>
                 ) : (
