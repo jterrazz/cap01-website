@@ -1,0 +1,6 @@
+{
+    "$schema": "https://unpkg.com/knip@6/schema.json",
+    // `astro check` loads @astrojs/check at run time — the Astro pass spawns
+    // the binary, so nothing in the tree imports the package by name.
+    "ignoreDependencies": ["@astrojs/check"]
+}

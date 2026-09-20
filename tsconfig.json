@@ -1,5 +1,3 @@
 {
-    "extends": "astro/tsconfigs/strict",
-    "include": [".astro/types.d.ts", "src/**/*", "*.ts"],
-    "exclude": ["node_modules", "dist", ".artifacts"]
+    "extends": ["@jterrazz/typescript/tsconfig/astro", "astro/tsconfigs/strict"]
 }
