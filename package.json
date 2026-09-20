@@ -17,8 +17,8 @@
     },
     "devDependencies": {
         "@astrojs/check": "0.9.10",
-        "@jterrazz/test": "^16.0.0",
-        "@jterrazz/typescript": "^10.3.0",
+        "@jterrazz/test": "^16.1.0",
+        "@jterrazz/typescript": "^10.3.1",
         "@types/node": "24.13.4",
         "vitest": "5.0.1"
     },
