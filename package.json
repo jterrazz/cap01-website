@@ -17,10 +17,10 @@
     },
     "devDependencies": {
         "@astrojs/check": "0.9.10",
-        "@jterrazz/test": "^15.3.0",
-        "@jterrazz/typescript": "^10.2.2",
+        "@jterrazz/test": "^16.0.0",
+        "@jterrazz/typescript": "^10.3.0",
         "@types/node": "24.13.4",
-        "vitest": "4.1.11"
+        "vitest": "5.0.1"
     },
     "engines": {
         "node": ">=24 <25"
