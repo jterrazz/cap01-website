@@ -31,7 +31,7 @@ test('invalid or local production destinations stay unavailable', () => {
         'not a URL',
     ];
     // Then - every unsupported destination is rejected.
-    expect(destinations.map((value) => appLink(false, value))).toEqual(
+    expect(destinations.map((value) => appLink(false, value))).toStrictEqual(
         destinations.map(() => null),
     );
 });
