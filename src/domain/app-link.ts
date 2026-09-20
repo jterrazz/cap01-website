@@ -3,7 +3,7 @@ export function appLink(development: boolean, configured?: string): null | strin
     if (development) {
         return 'http://localhost:4320';
     }
-    if (!configured) {
+    if (configured === undefined || configured === '') {
         return null;
     }
     try {
