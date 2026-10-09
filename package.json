@@ -20,6 +20,7 @@
         "@jterrazz/test": "file:../../../../jterrazz/work/repositories/package-test",
         "@jterrazz/typescript": "file:../../../../jterrazz/work/repositories/package-typescript",
         "@types/node": "24.13.4",
+        "playwright": "1.63.0",
         "vitest": "5.0.1"
     },
     "engines": {
