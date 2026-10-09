@@ -7,11 +7,16 @@ Use npm with Node 24 and the committed lockfile.
 | Command        | Purpose                                                         |
 | -------------- | --------------------------------------------------------------- |
 | `make install` | Install the locked dependencies                                 |
-| `npm run dev`  | Open the Astro development server on port 4321                  |
+| `npm run dev`  | Serve the development landing page at `http://localhost:4321`   |
 | `make fix`     | Repair what a fixer may, across the whole tree                  |
 | `make build`   | Write the static site into `dist/`                              |
 | `make test`    | Build, then run the module tests and the website spec           |
 | `make check`   | The gate: quality checks, the whole suite, the mutation verdict |
+
+In development the page links to the separately running web product at
+`http://localhost:4320`. Under an AI agent, `npm run dev` and `npm run start`
+start a background server and return: `npx astro dev stop` and
+`npx astro preview stop` end it, and `status` finds one.
 
 `npx playwright install chromium` once, before the website spec runs.
 

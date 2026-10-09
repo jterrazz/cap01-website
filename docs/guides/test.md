@@ -16,8 +16,8 @@ them.
 
 `make test` builds first: the website spec reads `dist/`, it never builds it.
 The spec starts the preview itself, bound to `127.0.0.1` on a free port and
-kept in the foreground — under an AI agent, Astro 7 would otherwise detach it
-into a background server.
+kept in the foreground — the agent detach is
+[Develop's](develop.md#the-loop).
 
 ## Which test to write
 
