@@ -1,6 +1,6 @@
-# Operating
+# Deploy
 
-Deploy the static contents of `dist/` after a successful build.
+Deploy the static contents of `dist/` after a successful `make build`.
 
 | Setting                       | Contract                                                               |
 | ----------------------------- | ---------------------------------------------------------------------- |
@@ -20,4 +20,5 @@ is a local inspection command, not the production serving layer. The static
 output can be served by the chosen host without a framework adapter or runtime.
 
 The reusable GitHub validation workflow checks changes on main and pull
-requests. Publishing and deployment are not wired automatically.
+requests, with a cached Chromium for the website spec. Publishing and
+deployment are not wired automatically.
