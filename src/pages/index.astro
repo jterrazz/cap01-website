@@ -2,7 +2,7 @@
 import { appLink } from '../domain/app-link';
 import Site from '../layouts/site.astro';
 
-const destination = appLink(import.meta.env.DEV, import.meta.env.PUBLIC_APP_URL);
+const destination = appLink(import.meta.env.DEV, import.meta.env.PUBLIC_APP_URL ?? '');
 const principles = [
     {
         number: '01',
