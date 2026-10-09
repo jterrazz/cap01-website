@@ -42,5 +42,11 @@ website spec runs in Chromium, which the mutation run leaves out.
 
 Layout is not asserted: review desktop and narrow-screen wrapping, keyboard
 focus and anchor navigation in the running preview when changing the
-stylesheet. The development link (`http://localhost:4320`) is proven by the
-module test alone; no spec starts the development server.
+stylesheet.
+
+The link branch of `index.astro` is unproven in both states that render it —
+development and a configured production build: whether the anchor renders, its
+`href` and its label. Only the address policy is proven, by the `app-link`
+module test. Check the production state by hand with
+`PUBLIC_APP_URL=https://… make build`, then `npm run start`; the development
+state with `npm run dev`.
