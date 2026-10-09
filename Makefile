@@ -7,6 +7,7 @@ build lint test:
 	npm run $@
 
 test: build
+test: export PUBLIC_APP_URL :=
 
 fix:
 	npx typescript fix

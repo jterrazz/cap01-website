@@ -25,8 +25,8 @@ The default is a website spec: the page met through its address, in a real
 browser, against the production build. `specs/website/landing/home.spec.ts`
 holds the page's whole outline, its head and its console. The outline is the
 contract of the unconfigured build — the "Public preview coming later" status
-and no link to an application, local or not — so the build the gate makes must
-not set `PUBLIC_APP_URL`.
+and no link to an application, local or not — so the Makefile pins
+`PUBLIC_APP_URL` empty for the build `make test` makes.
 
 A module test is kept only for a pure algorithm whose edge cases no page reaches
 cheaply. There is one:
