@@ -1,24 +1,17 @@
-.PHONY: install build lint test fix check dev
+.PHONY: install build lint fix test mutation check
 
-node_modules/.install: package-lock.json
+install:
 	npm ci
-	@touch node_modules/.install
 
-install: node_modules/.install
+build lint test:
+	npm run $@
 
-build: install
-	npm run build
+test: build
 
-lint: install
-	npm run lint
+fix:
+	npx typescript fix
 
-test: install
-	npm test
+mutation:
+	npx typescript mutation
 
-fix: install
-	npm run lint:fix
-
-check: lint test build
-
-dev: install
-	npm run dev
+check: lint test mutation

@@ -10,15 +10,15 @@
         "start": "astro preview --port 4321",
         "lint": "typescript check",
         "lint:fix": "typescript fix",
-        "test": "vitest run"
+        "test": "vitest --run"
     },
     "dependencies": {
         "astro": "7.3.2"
     },
     "devDependencies": {
         "@astrojs/check": "0.9.10",
-        "@jterrazz/test": "^16.1.0",
-        "@jterrazz/typescript": "^10.3.1",
+        "@jterrazz/test": "file:../../../../jterrazz/work/repositories/package-test",
+        "@jterrazz/typescript": "file:../../../../jterrazz/work/repositories/package-typescript",
         "@types/node": "24.13.4",
         "vitest": "5.0.1"
     },
