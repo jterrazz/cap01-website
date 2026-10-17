@@ -17,8 +17,8 @@
     },
     "devDependencies": {
         "@astrojs/check": "0.9.10",
-        "@jterrazz/test": "file:../../../../jterrazz/work/repositories/package-test",
-        "@jterrazz/typescript": "file:../../../../jterrazz/work/repositories/package-typescript",
+        "@jterrazz/test": "file:.artifacts/packages/jterrazz-test-17.0.0.tgz",
+        "@jterrazz/typescript": "file:.artifacts/packages/jterrazz-typescript-11.0.0.tgz",
         "@types/node": "24.13.4",
         "playwright": "1.63.0",
         "vitest": "5.0.1"
