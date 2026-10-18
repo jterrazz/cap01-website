@@ -75,7 +75,7 @@ describe('home', () => {
                     'cap01 is an AI habit and growth coach in the making. A little structure for your habits, a little room to reflect, and a direction of your own.',
                 'theme-color': '#ffffff',
             },
-            title: 'cap01 — A little more intentional.',
+            title: 'cap01: A little more intentional.',
         });
     });
 
