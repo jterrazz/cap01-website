@@ -24,6 +24,6 @@ state, account handling or the mobile application.
 The call to action is the one decision the page makes at build time.
 `appLink(development, configured)` returns the local product address in
 development, and in production the configured `PUBLIC_APP_URL` only when it is a
-public HTTPS address — never a localhost, never one carrying credentials. Any
+public HTTPS address, never a localhost and never one carrying credentials. Any
 other value renders the "Public preview coming later" status instead of a link.
 How an operator sets the address is [Deploy](../guides/deploy.md).

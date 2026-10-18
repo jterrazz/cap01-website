@@ -5,7 +5,7 @@ Deploy the static contents of `dist/` after a successful `make build`.
 | Setting                       | Contract                                              |
 | ----------------------------- | ----------------------------------------------------- |
 | `PUBLIC_APP_URL`              | Optional build-time HTTPS application address         |
-| No configured application URL | Shows “Public preview coming later”                   |
+| No configured application URL | Shows "Public preview coming later"                   |
 | `npm run start`               | Local inspection of the production build on port 4321 |
 
 Production does not fall back to localhost. The link policy rejects malformed
