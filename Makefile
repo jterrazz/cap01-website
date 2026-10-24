@@ -6,10 +6,11 @@ node_modules/.install: package-lock.json
 
 install: node_modules/.install
 
-build lint test: node_modules/.install
+build lint: node_modules/.install
 	npm run $@
 
 test: build
+	npx typescript test
 test: export PUBLIC_APP_URL :=
 
 fix: node_modules/.install

@@ -4,14 +4,14 @@ Use npm with Node 24 and the committed lockfile.
 
 ## The loop
 
-| Command        | Purpose                                                         |
-| -------------- | --------------------------------------------------------------- |
-| `make install` | Install the locked dependencies                                 |
-| `npm run dev`  | Serve the development landing page at `http://localhost:4321`   |
-| `make fix`     | Repair what a fixer may, across the whole tree                  |
-| `make build`   | Write the static site into `dist/`                              |
-| `make test`    | Build, then run the module tests and the website spec           |
-| `make check`   | The gate: quality checks, the whole suite, the mutation verdict |
+| Command        | Purpose                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------ |
+| `make install` | Install the locked dependencies                                                                              |
+| `npm run dev`  | Serve the development landing page at `http://localhost:4321`                                                |
+| `make fix`     | Repair what a fixer may, across the whole tree                                                               |
+| `make build`   | Write the static site into `dist/`                                                                           |
+| `make test`    | Build, then `typescript test`: the module tests and the website spec, nothing on a tree already proven green |
+| `make check`   | The gate: quality checks, the whole suite, the mutation verdict                                              |
 
 In development the page links to the separately running web product at
 `http://localhost:4320`. Under an AI agent, `npm run dev` and `npm run start`
