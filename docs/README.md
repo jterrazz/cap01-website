@@ -2,7 +2,7 @@
 
 The implementation and operating contracts of the public cap01 site, cut by what
 the reader came to do. `README.md` at the root says what the site is;
-`AGENTS.md` routes an agent into this map.
+`CLAUDE.md` routes an agent into this map.
 
 ## Guides
 
