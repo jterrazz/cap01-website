@@ -22,12 +22,12 @@ start a background server and return: `npx astro dev stop` and
 
 ## The declaration
 
-Two toolchain packages carry the conventions. `jterrazz.config.ts` declares the
+Two toolchain packages carry the conventions. `studio.config.ts` declares the
 site (kind `website`, platform `astro`) and lists the `test()` preset of
 `@jterrazz/test`; it states no exception. Every other tool file is derived from
 it: `oxlint.config.ts`, `oxfmt.config.ts`, `vitest.config.ts` and
 `tsconfig.json` are the one-liners `make fix` writes, and `check` refuses any of
-them saying more. A setting the site needs goes into `jterrazz.config.ts` with
+them saying more. A setting the site needs goes into `studio.config.ts` with
 its reason, never into a tool file.
 
 `typescript check` runs `astro sync`, `astro check` over the templates and the

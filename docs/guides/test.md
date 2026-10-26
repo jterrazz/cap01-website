@@ -6,7 +6,7 @@ this page is what this site adds to it.
 
 ## The two projects
 
-The projects are read off the tree; `jterrazz.config.ts` states nothing about
+The projects are read off the tree; `studio.config.ts` states nothing about
 them.
 
 | Project   | Collects                     | Runs                                                                      |
